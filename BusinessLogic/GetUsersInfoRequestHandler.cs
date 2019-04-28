@@ -2,14 +2,16 @@
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq;
+using NewAPI.Models;
+using NewAPI.Services.Interfaces;
 
 
-namespace NewAPI
+namespace NewAPI.BusinessLogic
 {
     public class GetUsersInfoRequestHandler
     {
-        private readonly IUserlnfoService _userInfoService;
-        public GetUsersInfoRequestHandler(IUserlnfoService userInfoService)
+        private readonly IUserInfoService _userInfoService;
+        public GetUsersInfoRequestHandler(IUserInfoService userInfoService)
         {
             _userInfoService = userInfoService;
         }

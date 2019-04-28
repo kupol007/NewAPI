@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NewAPI
+namespace NewAPI.Models
 {
     public class User
     {

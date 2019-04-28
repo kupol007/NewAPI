@@ -3,17 +3,20 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
         <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Dapper" Version="1.60.6" />
+        <PackageReference Include="MassTransit" Version="5.3.2" />
         <PackageReference Include="Microsoft.AspNetCore.App" />
         <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
         <PackageReference Include="Npgsql" Version="4.0.6" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Base\" />
+      <Folder Include="Database\" />
     </ItemGroup>
 
 </Project>
